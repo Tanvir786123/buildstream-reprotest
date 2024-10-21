@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools >= 61.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "buildstream-reprotest"
+dependencies = ["diffoscope", "yattag"]
+dynamic = ["version"]
+
+[project.scripts]
+buildstream-reprotest = "buildstream_reprotest:main"
+
+[tool.setuptools_scm]
